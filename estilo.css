@@ -108,7 +108,7 @@
         }
         
         #inicio .contenido .presentacion h2 span {
-            font-size: 25px;
+            font-size: 55px;
             color: #ff5080;
         }
         
@@ -150,16 +150,20 @@
             padding: 100px 15px;
             color: #111135;
             display: flex;
+            
         }
         
         #sobremi .contenedor-foto {
             max-width: 400px;
             margin-right: 80px;
+            display: flex;
+            justify-content: center;
+            align-items:center ;
         }
         
         #sobremi .contenedor-foto img {
             padding: 20px;
-            width: 100%;
+            width: 380px;
             border-radius: 20px;
             background-color: #f3f3f3;
         }
@@ -507,22 +511,33 @@
                 margin-bottom: 15px;
             }
 
+           
+
             @media screen and (max-width: 706px) {
                 .stack-container .tecnologies-logo img {
                     width: 40px;
                     margin: 30px;
                   }
+                }
 
+
+                 
                   @media screen and (max-width: 460px) {
                     .stack-container .tecnologies-logo img {
                         width: 30px;
                         margin: 20px;
-                      }
+                    }
+        
+                    }
 
-            }
+
+                }
+
+
+    @media screen and (max-width: 980px) {
+        #sobremi {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; /* Cambia la dirección del flexbox a columna */
         }
-
-
-
-
-
+    }
