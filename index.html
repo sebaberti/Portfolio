@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="ruta/a/font-awesome/css/all.min.css">
+
+    <link rel="stylesheet" href="estilo.css">
+    <title>Portfolio - Sebastian Berti</title>
+</head>
+
+<body>
+    <!-- SECCION I N I C I O -->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>SB></h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Icono del menu responsive -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+
+                    <div class="redes">
+                        <a href="https://www.linkedin.com/in/sebastian-berti/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        
+                        <a href="https://github.com/sebaberti" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>
+                <h2>Soy <span>Sebastian Berti</span>, Desarrollador .NET</h2>
+                <p class="descripcion">Los invito a conecerme y a que vean los proyectos que he realizado </p>
+                <a href="#portfolio">Ir a Portafolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION S O B R E M I -->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="img/perfil.jpg" alt="">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre Mi</p>
+            <h2>Hola, Soy <span>Sebastian Berti</span> </h2>
+            <h3>Desarrollador .NET</h3>
+            <p>Tengo 27 años y después de dos años de formación en Administración de Empresas, tomé la decisión de realizar un cambio en mi enfoque hacia la programación. A través de diversos cursos autodidactas y mi actual formación en la Tecnicatura Universitaria en Programación en UTN, he ampliado significativamente mis habilidades y conocimientos en el mundo de la tecnología.</p>
+            <p>Soy una persona dinámica y proactiva siempre en búsqueda de la mejora continua y nuevos desafíos que
+                me permitan aplicar y expandir mis conocimientos. Aspiro a integrarme en el
+                sector IT, en una empresa que respalde mi desarrollo personal y académico.
+                </p>
+            <a href="./img/SebastianBertiCV.pdf" download >Descargar CV</a>
+        </div>
+    </section>
+
+
+    <!-- SECCION H A B I L I D A D E S -->
+
+    <div class="contenedor-skills">
+        <section class="stack-container" id="stack">
+            <div class="stack-title">
+              <h2 data-section="profile" data-value="stack-title">MI STACK</h2>
+            </div>
+            <div class="tecnologies-logo">
+              <img src="./img/html.png" />
+              <img src="./img/css.png" />
+              <img src="./img/js.png" />
+              <img src="./img/bootstrap.png" />
+              <img src="./img/git.png" />
+              <img src="./img/github.png" />
+              <img src="./img/csharp.png" />
+              <img src="./img/net.png" />
+              <img src="./img/sql.png" />
+              <img src="./img/poo.png" />
+            </div>
+          </section>
+    </div>
+
+
+    <!-- SECCION PORTAFOLIO -->
+    <section id="portfolio">
+        <h3 class="titulo-seccion">Mis Proyectos</h3>
+        <div class="fila">
+           
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/apiImgEdit.png" alt="">
+                <div class="info">
+                    <h4>Api Rest Full en .NET 7</h4>
+                    <p>Backend</p>
+                    <a href="https://github.com/sebaberti/MagicVilla-API" target="_blank"><img src="./img/github.png" alt=""></a>
+
+                </div>
+                <p class="text-card">
+                    <li>Solicitudes HTTP GET, POST, PUT, PATCH y DELETE.</li>
+                    <li>DTO's en API.</li>
+                    <li>Entity Framework Core.</li>
+                    <li>Inyeccion de dependencia.</li>
+                    <li>Patron de Repositorio.</li>
+                    <li>Migraciones de Entity Framework Code First para guardar datos de forma
+                    persistente en una base de datos SQL.</li>
+                    <li>Documentacion de API.</li>
+                    <li>AutoMapper.</li>
+                  </p>
+            </div>
+            
+            
+            
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/webimgediiiiit.png" alt="">
+                <div class="info">
+                    <h4>TP Final nivel 3</h4>
+                    <p>ASP .NET WebForms.</p>
+                    <a href="https://github.com/sebaberti/TPfinal-Nivel3-BertiSebastian" target="_blank"><img src="./img/github.png" alt=""></a>
+                </div>
+                <p class="text-card">
+                  Proyecto Final nivel 3 del curso de Maxi Programa, se trata de un aplicacion web, desarrollada con ASP.NET con manejo de datos desde SQL, en la misma podemos loguearnos como registrarnos para ingresar, si se tienen permisos de administrador los productos pueden ser gestionados desde la misma (ABM), disenio responsivo gracias a Bootstrap 
+                  </p>
+            </div>
+            
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/tp2img.edit.png" alt="">
+                <div class="info">
+                    <h4>Aplicacion Desktop</h4>
+                    <p>Winforms .NET</p>
+                    <a href="https://github.com/sebaberti/App-desktop-TPfinal-Nivel2" target="_blank"><img src="./img/github.png" alt=""></a>
+
+                </div>
+                <p class="text-card">
+                    Proyecto final nivel 2 del curso de MaxiPrograma, se trata de una Aplicacion de escritorio desarrollada EN .NET Framework con C# para la administracion de articulos #CRUD(Create- Read - Update - Delete), conectada a una base de datos con libreria ADO.NET en SQLServer.
+                    
+                  </p>
+            </div>
+       
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/crud2.edit.png" alt="">
+                <div class="info">
+                    <h4>Aplicacion Desktop</h4>
+                    <p>Winforms .NET</p>
+                    <a href="https://github.com/sebaberti/Proceso-Crud---Winforms" target="_blank"><img src="./img/github.png" alt=""></a>
+
+                </div>
+                <p class="text-card">
+                    Desarrollada en .NET Framework con C# usando la libreria ADO .NET para la conexion a bases de datos SQL Server.Este proyecto lo realice para afianzar los conocimientos adquiridos en el nivel 2 de Maxi Programa y ampliar los mismos ya que en este, ademas de crear mi propia base de datos tambien trabaje toda la conexion mediante procedimientos almacenados, ademas decici agregarle la funcionalidad de un reporte mediante el cual se puede exportar  el listado de prOductos a un excel o pdf.
+                  </p>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/imgiphone.edit.png" alt="">
+                <div class="info">
+                    <h4>Landing page</h4>
+                    <p>Diseño Web</p>
+                    <a href="https://github.com/sebaberti/iPhone-shop-cba" target="_blank"><img src="./img/github.png" alt=""></a>
+
+                </div>
+                <p class="text-card">
+                    Proyecto final realizado para el curso de Diseño Web de Nucba, el mismo se trata de una Pagina Web totalmente responsiva, la misma fue realizada con las tecnologias HTML, CSS Y JAVASCRIPT,
+                 
+                </p>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/imgclutch.edit.png" alt="">
+                <div class="info">
+                    <h4>Juego de Consola</h4>
+                    <p>Aplicacion de Consola</p>
+                    <a href="https://github.com/sebaberti/Game-Clutch-ProyectoFinal" target="_blank"><img src="./img/github.png" alt=""></a>
+
+                </div>
+                <p class="text-card">
+                   Proyecto final realizado para la materia Laboratorio 1 de UTN, el mismo consta de un juego llamado CLUTCH, para dos jugadores que se juega con cartas seleccionadas del mazo de la baraja francesa y un dado de 6 caras. Desarrollado en su totalidad con C++ haciendo uso de un proyecto de aplicacion de consola, en el mismo se abarcan todos los fundamentos y conceptos basicos de programacion 
+                  </p>
+            </div>
+        
+        
+           
+        </div>
+    </section>
+
+    <!-- SECCTION C O N T A C T O -->
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contactame</h3>
+        <div class="contenedor-form">
+            <div class="contact">
+                <div>
+                <a href="https://www.linkedin.com/in/sebastian-berti/" target="_blank"
+                  ><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+
+                <div>
+                <a href="https://api.whatsapp.com/send?phone=3516750868" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+            <div>
+                <a href="mailto:sebaberti.8@gmail.com" target="_blank"> <i class="fa-solid fa-envelope"></i></a>
+                <i class="fa-solid fa-copy" id="copy-email"></i>
+            </div>
+                    
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION FOOTER -->
+    <footer>
+        <p>Desarrollado por Sebastian Berti - 2022</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
