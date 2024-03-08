@@ -474,16 +474,7 @@
                 font-size: 25px;
                 text-align: center;
             }
-            /* seccion MIS SERVICIOS */
-            #servicios {
-                padding: 50px 15px;
-            }
-            #servicios .fila {
-                display: block;
-            }
-            #servicios .fila .servicio {
-                margin: 10px auto;
-            }
+           
             /* seccion HABLIDADES MI */
             .contenedor-skills {
                 padding: 50px 20px;
