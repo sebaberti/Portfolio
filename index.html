@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" href="estilo.css">
     <title>Portfolio - Sebastian Berti</title>
+    <link rel="icon" type="image/x-icon" href="/img/logo.png">
 </head>
 
 <body>
@@ -19,10 +20,10 @@
         <div class="contenido">
             <header>
                 <div class="contenido-header">
-                    <h1>SB></h1>
+                    <a href="#inicio"><h1>SB></h1></a>
                     <nav id="nav" class="">
                         <ul id="links">
-                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#inicio" class="seleccionado"  onclick="seleccionar(this)">INICIO</a></li>
                             <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
                             <li><a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a></li>
                             <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
@@ -44,7 +45,7 @@
                 </div>
             </header>
             <div class="presentacion">
-                <p class="bienvenida">Bienvenidos</p>
+                <h1 class="bienvenida">Bienvenidos</h1>
                 <h2>Soy <span>Sebastian Berti</span>, Desarrollador .NET</h2>
                 <p class="descripcion">Los invito a conecerme y a que vean los proyectos que he realizado </p>
                 <a href="#portfolio">Ir a Portafolio</a>
@@ -76,7 +77,7 @@
     <div class="contenedor-skills">
         <section class="stack-container" id="stack">
             <div class="stack-title">
-              <h2 data-section="profile" data-value="stack-title">MI STACK</h2>
+              <h2 data-section="profile" data-value="stack-title">TECNOLOGIAS</h2>
             </div>
             <div class="tecnologies-logo">
               <img src="./img/html.png" />
@@ -84,7 +85,7 @@
               <img src="./img/js.png" />
               <img src="./img/bootstrap.png" />
               <img src="./img/git.png" />
-              <img src="./img/github.png" />
+              <img src="./img/c++.png" />
               <img src="./img/csharp.png" />
               <img src="./img/net.png" />
               <img src="./img/sql.png" />
@@ -100,91 +101,128 @@
         <div class="fila">
            
             <div class="proyecto">
-                <div class="overlay"></div>
-                <img src="img/apiImgEdit.png" alt="">
+                
+                <img src="img/api.png" alt="">
                 <div class="info">
-                    <h4>Api Rest Full en .NET 7</h4>
-                    <p>Backend</p>
-                    <a href="https://github.com/sebaberti/MagicVilla-API" target="_blank"><img src="./img/github.png" alt=""></a>
-
+                    <h3 class="info-title">Api Rest Full en .NET 7</h3>
+                    <p>GET - POST - PUT - PATCH - DELETE</p>
+                    <p>Desarrollada con: </p>
+                    <div class="dev">
+                        <img src="/img/csharp.png" alt="" class="icon">
+                        <img src="/img/net.png" alt="" class="icon">
+                        <img src="/img/sql.png" alt="" class="icon">
+                        
+                    </div>
+                    <a href="https://github.com/sebaberti/MagicVilla-API" target="_blank"><img src="./img/github.png" alt="" class="github-icon"></a>
                 </div>
-                <p class="text-card">
-                    <li>Solicitudes HTTP GET, POST, PUT, PATCH y DELETE.</li>
-                    <li>DTO's en API.</li>
-                    <li>Entity Framework Core.</li>
-                    <li>Inyeccion de dependencia.</li>
-                    <li>Patron de Repositorio.</li>
-                    <li>Migraciones de Entity Framework Code First para guardar datos de forma
-                    persistente en una base de datos SQL.</li>
-                    <li>Documentacion de API.</li>
-                    <li>AutoMapper.</li>
-                  </p>
+                
             </div>
             
             
             
             <div class="proyecto">
                 <div class="overlay"></div>
-                <img src="img/webimgediiiiit.png" alt="">
+                <img src="img/img-web.png" alt="">
                 <div class="info">
-                    <h4>TP Final nivel 3</h4>
-                    <p>ASP .NET WebForms.</p>
-                    <a href="https://github.com/sebaberti/TPfinal-Nivel3-BertiSebastian" target="_blank"><img src="./img/github.png" alt=""></a>
+                    <h3 class="info-title">Administrador de catálogo</h3>
+                    <p>Aplicacion web para gestion de productos. (ASP .NET)</p>
+                    <p>Desarrollada con: </p>
+                    <div class="dev">
+                        <img src="/img/csharp.png" alt="" class="icon">
+                        <img src="/img/net.png" alt="" class="icon">
+                        <img src="/img/sql.png" alt="" class="icon">
+                        
+                    </div>
+                    <a href="https://github.com/sebaberti/TPfinal-Nivel3-BertiSebastian" target="_blank"><img src="./img/github.png" alt="" class="github-icon"></a>
                 </div>
-                <p class="text-card">
-                    Proyecto final nivel 3 del curso de Maxi Programa, se trata de una aplicación web desarrollada con ASP.NET con manejo de datos desde SQL. En la misma podemos registrarnos o iniciar sesión. Si se tienen permisos de administrador, los productos pueden ser gestionados desde la misma (ABM). Se hace uso de validaciones y manejo de excepciones. Diseño responsivo gracias a Bootstrap.                  </p>
-            </div>
+               </div>
             
             <div class="proyecto">
                 <div class="overlay"></div>
-                <img src="img/tp2img.edit.png" alt="">
+                <img src="img/img-tp2.png" alt="">
                 <div class="info">
-                    <h4>Aplicación Desktop</h4>
-                    <p>Winforms .NET</p>
-                    <a href="https://github.com/sebaberti/App-desktop-TPfinal-Nivel2" target="_blank"><img src="./img/github.png" alt=""></a>
+                    <h3 class="info-title">Administrador de catálogo</h3>
+                    <p>Aplicacion de escritorio - CRUD de articulos</p>
+                    <p>Desarrollada con: </p>
+                    <div class="dev">
+                        <img src="/img/csharp.png" alt="" class="icon">
+                        <img src="/img/net.png" alt="" class="icon">
+                        <img src="/img/sql.png" alt="" class="icon">
+                        
+                    </div>
+                    <a href="https://github.com/sebaberti/App-desktop-TPfinal-Nivel2" target="_blank"><img src="./img/github.png" alt="" class="github-icon"></a>
 
                 </div>
-                <p class="text-card">
-                    Proyecto final nivel 2 del curso de MaxiPrograma. Se trata de una aplicación de escritorio desarrollada en .NET Framework con C#, diseñada para la administración de artículos mediante las operaciones CRUD (Crear, Leer, Actualizar, Eliminar), conectada a una base de datos utilizando la librería ADO.NET en SQL Server.                    
-                  </p>
+                
             </div>
        
             <div class="proyecto">
                 <div class="overlay"></div>
-                <img src="img/crud2.edit.png" alt="">
+                <img src="img/crud2.png" alt="">
                 <div class="info">
-                    <h4>Aplicación Desktop</h4>
-                    <p>Winforms .NET</p>
-                    <a href="https://github.com/sebaberti/Proceso-Crud---Winforms" target="_blank"><img src="./img/github.png" alt=""></a>
+                    <h3 class="info-title">Administrador de catálogo</h3>
+                    <p>Aplicacion de escritorio - CRUD de articulos</p>
+                    <p>Desarrollada con: </p>
+                    <div class="dev">
+                        <img src="/img/csharp.png" alt="" class="icon">
+                        <img src="/img/net.png" alt="" class="icon">
+                        <img src="/img/sql.png" alt="" class="icon">
+                        
+                    </div>
+                    <a href="https://github.com/sebaberti/Proceso-Crud---Winforms" target="_blank"><img src="./img/github.png" alt="" class="github-icon"></a>
 
                 </div>
-                <p class="text-card">
-                    Desarrollada en .NET Framework con C#, usando la librería ADO.NET para la conexión a bases de datos SQL Server. Este proyecto lo realicé para afianzar los conocimientos adquiridos y ampliarlos, ya que en este, además de crear mi propia base de datos, también trabajé toda la conexión mediante procedimientos almacenados. Además, decidí agregarle la funcionalidad de un reporte mediante el cual se puede exportar el listado de productos a un archivo Excel o PDF.                  </p>
+               
             </div>
             <div class="proyecto">
                 <div class="overlay"></div>
-                <img src="img/imgiphone.edit.png" alt="">
+                <img src="img/imgiphone.png" alt="">
                 <div class="info">
-                    <h4>Landing page</h4>
-                    <p>Diseño Web</p>
-                    <a href="https://github.com/sebaberti/iPhone-shop-cba" target="_blank"><img src="./img/github.png" alt=""></a>
+                    <h3 class="info-title">Iphone Shop</h3>
+                    <p>Pagina Web </p>
+                    <p>Desarrollada con: </p>
+                    <div class="dev">
+                        <img src="/img/html.png" alt="" class="icon">
+                        <img src="/img/css.png" alt="" class="icon">
+                        <img src="/img/js.png" alt="" class="icon">
+                        
+                    </div>
+                    <a href="https://github.com/sebaberti/iPhone-shop-cba" target="_blank"><img src="./img/github.png" alt="" class="github-icon"></a>
 
                 </div>
-                <p class="text-card">
-                    Proyecto final realizado para el curso de Diseño Web de Nucba. Se trata de una página web totalmente responsiva, desarrollada con las tecnologías HTML, CSS y JavaScript. Esta página web fue diseñada con el objetivo de mostrar la creatividad y habilidades adquiridas durante el curso. La combinación de HTML para la estructura, CSS para el diseño y JavaScript para la interactividad ofrece una experiencia dinámica y atractiva para los usuarios.                 
-                </p>
+               
             </div>
             <div class="proyecto">
                 <div class="overlay"></div>
-                <img src="img/imgclutch.edit.png" alt="">
+                <img src="img/imgclutch.png" alt="">
                 <div class="info">
-                    <h4>Juego de Consola</h4>
-                    <p>Aplicacion de Consola</p>
-                    <a href="https://github.com/sebaberti/Game-Clutch-ProyectoFinal" target="_blank"><img src="./img/github.png" alt=""></a>
+                    <h3 class="info-title">Clutch</h3>
+                    <p>Juego de consola - UTN Lab I</p>
+                    <p>Desarrollado con: </p>
+                    <div class="dev">
+                        <img src="/img/c++.png" alt="" class="icon">
+                        
+                    </div>
+                    <a href="https://github.com/sebaberti/Game-Clutch-ProyectoFinal" target="_blank"><img src="./img/github.png" alt="" class="github-icon"></a>
 
                 </div>
-                <p class="text-card">
-                    Proyecto final realizado para la materia Laboratorio 1 de UTN. El mismo consta de un juego llamado CLUTCH, para dos jugadores, que se juega con cartas seleccionadas del mazo de la baraja francesa y un dado de 6 caras. Desarrollado en su totalidad con C++, haciendo uso de un proyecto de aplicación de consola. En el mismo se abarcan todos los fundamentos y conceptos básicos de programación.                  </p>
+            </div>
+
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/gamee.png" alt="">
+                <div class="info">
+                    <h3 class="info-title">Programers vs Hackers</h3>
+                    <p>Proyecto en equipo - UTN Lab II</p>
+                    <p>Desarrollado con: </p>
+                    <div class="dev">
+                        <img src="/img/c++.png" alt="" class="icon">
+                        
+                    </div>
+                    <a href="https://github.com/sebaberti/Programmers-vs-Hackers" target="_blank"><img src="./img/github.png" alt="GitHub" class="github-icon"></a>
+
+                </div>
+                
             </div>
         
         
