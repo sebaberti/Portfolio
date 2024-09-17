@@ -1,27 +1,10 @@
-//Función que me aplica el estilo a la opciòn seleccionada y quita la previamente seleccionada
-// function seleccionar(link) {
-//     var opciones = document.querySelectorAll('#links  a');
-//     opciones[0].className = "";
-//     opciones[1].className = "";
-//     opciones[2].className = "";
-//     opciones[3].className = "";
-//     opciones[4].className = "";
-//     link.className = "seleccionado";
-
-//     //Hacemos desaparecer el menu una vez que se ha seleccionado una opcion
-//     //en modo responsive
-//     var x = document.getElementById("nav");
-//     x.className = "";
-// }
-
-
-
+//Aplicar clase al elemeto seleccionado
 function seleccionar(link) {
     var opciones = document.querySelectorAll('#links a');
     opciones.forEach(opcion => opcion.className = "");
     link.className = "seleccionado";
 
-    // Hacemos desaparecer el menú una vez que se ha seleccionado una opción en modo responsive
+    //Desaparecer el menú una vez seleccionada una opción en modo responsive
     var nav = document.getElementById("nav");
     if (nav.className === "responsive") {
         nav.className = "";
@@ -30,7 +13,8 @@ function seleccionar(link) {
     var x = document.getElementById("nav");
     x.className = "";
 }
-//función que muestra el menu responsive
+
+//Función que muestra el menu responsive
 function responsiveMenu() {
     var x = document.getElementById("nav");
     if (x.className === "") {
@@ -40,7 +24,7 @@ function responsiveMenu() {
     }
 }
 
-//funcion para que puedan copiar mi mail con un click 
+//Funcion para que puedan copiar mi mail con un click 
 document.getElementById('copy-email').addEventListener('click', function() {
     var email = 'sebaberti.8@gmail.com';
     var tempInput = document.createElement('input');
